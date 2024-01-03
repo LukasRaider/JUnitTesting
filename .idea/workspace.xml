@@ -4,20 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="324abf55-c82a-4363-90ee-c213ba2f80de" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/hybrisProjectSettings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JUnitTesting.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/calculator/CalcTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/calculator/Calc.java" afterDir="false" />
+    <list default="true" id="324abf55-c82a-4363-90ee-c213ba2f80de" name="Changes" comment="First Testing">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/calculator/CalcTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/calculator/CalcTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/calculator/Calc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculator/Calc.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,9 +46,12 @@
     "JUnit.CalcTest.executor": "Run",
     "JUnit.CalcTest.sectiDvaKladna.executor": "Run",
     "JUnit.CalcTest.sectiDvaZaporna.executor": "Run",
+    "JUnit.CalcTest.sectiDveStejnaCisla.executor": "Run",
     "JUnit.CalcTest.sectiFloatCisla.executor": "Run",
     "JUnit.CalcTest.sectiKladneZaporne.executor": "Run",
     "JUnit.CalcTest.sectiMiliony.executor": "Run",
+    "JUnit.CalcTest.sectiNuly.executor": "Run",
+    "JUnit.CalcTest.sectiStejneOdsebe.executor": "Run",
     "JUnit.CalcTest.sectiZaporneKladne.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -81,8 +75,8 @@
       <recent name="calculator" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CalcTest.sectiMiliony">
-    <configuration name="CalcTest.sectiDvaKladna" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CalcTest">
+    <configuration name="CalcTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JUnitTesting" />
       <extension name="coverage">
         <pattern>
@@ -92,13 +86,12 @@
       </extension>
       <option name="PACKAGE_NAME" value="calculator" />
       <option name="MAIN_CLASS_NAME" value="calculator.CalcTest" />
-      <option name="METHOD_NAME" value="sectiDvaKladna" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalcTest.sectiFloatCisla" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CalcTest.sectiDveStejnaCisla" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JUnitTesting" />
       <extension name="coverage">
         <pattern>
@@ -108,23 +101,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="calculator" />
       <option name="MAIN_CLASS_NAME" value="calculator.CalcTest" />
-      <option name="METHOD_NAME" value="sectiFloatCisla" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CalcTest.sectiKladneZaporne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JUnitTesting" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="calculator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="calculator" />
-      <option name="MAIN_CLASS_NAME" value="calculator.CalcTest" />
-      <option name="METHOD_NAME" value="sectiKladneZaporne" />
+      <option name="METHOD_NAME" value="sectiDveStejnaCisla" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -146,7 +123,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalcTest.sectiZaporneKladne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CalcTest.sectiNuly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JUnitTesting" />
       <extension name="coverage">
         <pattern>
@@ -156,7 +133,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="calculator" />
       <option name="MAIN_CLASS_NAME" value="calculator.CalcTest" />
-      <option name="METHOD_NAME" value="sectiZaporneKladne" />
+      <option name="METHOD_NAME" value="sectiNuly" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalcTest.sectiStejneOdsebe" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JUnitTesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="calculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="calculator" />
+      <option name="MAIN_CLASS_NAME" value="calculator.CalcTest" />
+      <option name="METHOD_NAME" value="sectiStejneOdsebe" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -164,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CalcTest" />
+        <item itemvalue="JUnit.CalcTest.sectiStejneOdsebe" />
+        <item itemvalue="JUnit.CalcTest.sectiDveStejnaCisla" />
+        <item itemvalue="JUnit.CalcTest.sectiNuly" />
         <item itemvalue="JUnit.CalcTest.sectiMiliony" />
-        <item itemvalue="JUnit.CalcTest.sectiFloatCisla" />
-        <item itemvalue="JUnit.CalcTest.sectiKladneZaporne" />
-        <item itemvalue="JUnit.CalcTest.sectiZaporneKladne" />
-        <item itemvalue="JUnit.CalcTest.sectiDvaKladna" />
       </list>
     </recent_temporary>
   </component>
@@ -181,17 +174,19 @@
       <option name="presentableId" value="Default" />
       <updated>1704265970549</updated>
     </task>
+    <task id="LOCAL-00001" summary="First Testing">
+      <option name="closed" value="true" />
+      <created>1704269101284</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1704269101284</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First Testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="First Testing" />
   </component>
 </project>

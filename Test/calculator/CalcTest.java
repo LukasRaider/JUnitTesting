@@ -32,4 +32,28 @@ class CalcTest {
     void sectiMiliony(){
         assertEquals(10000000,calc.Secti(1000000,9000000));
     }
+    @Test
+    void sectiNuly(){
+        assertEquals(0,calc.Secti(0,0));
+    }
+    @Test
+    void prvniNula(){
+        assertEquals(20,calc.Secti(0,20));
+    }
+    @Test
+    void sectiNula2(){
+        assertEquals(20,calc.Secti(20,0));
+    }
+    @Test
+    void sectiDveStejnaCisla(){
+        assertEquals(80,calc.Secti(40,40));
+    }
+    @Test
+    void sectiStejneOdsebe(){
+        assertEquals(0,calc.Secti(40,-40));
+    }
+    @Test
+    void sectiStejneOdsebe2(){
+        assertEquals(0,calc.Secti(-40,40));
+    }
 }

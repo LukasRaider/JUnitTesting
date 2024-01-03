@@ -7,6 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class CalcTest {
 
     Calc calc;
+    static final double DELTA = 0.00001;
     @BeforeEach
     void setUp() {
         calc = new Calc();
@@ -151,113 +152,146 @@ class CalcTest {
     //deleni
 
     @Test
-    void delDvaKladna() {
-        assertEquals(2,calc.Del(10,5));
-    }
-    @Test
-    void delDvaZaporna(){
-        assertEquals(-1,calc.Del(-2,-5));
-    }
-    @Test
-    void delZaporneKladne(){
-        assertEquals(-1,calc.Del(-2,5));
-    }
-    @Test
-    void delKladneZaporne(){
-        assertEquals(-1,calc.Del(2,-5));
-    }
-    @Test
-    void delMiliony(){
-        assertEquals(-1,calc.Del(1000000,9000000));
-    }
-    @Test
-    void delNuly(){
-        assertEquals(-1,calc.Del(0,0));
-    }
-    @Test
-    void delNula(){
-        assertEquals(0,calc.Del(0,20));}
-    @Test
-    void delNula2(){
-        assertEquals(-1,calc.Del(20,0));
-    }
-    @Test
-    void delDveStejnaCisla(){
-        assertEquals(0,calc.Del(40,40));
-    }
-    @Test
-    void delStejneOdsebe(){
-        assertEquals(-1,calc.Del(40,-40));
-    }
-    @Test
-    void delStejneOdsebe2(){
-        assertEquals(-1,calc.Del(-40,40));
-    }
-
-    //Secti od do
-
-    @Test
-    void OdDoDvaKladna() {
-        assertEquals(-1,calc.SectiOdDo(10,5));
-    }
-    @Test
-    void OdDoDvaZaporna(){
-        assertEquals(-1,calc.SectiOdDo(-2,-5));
-    }
-    @Test
-    void OdDoZaporneKladne(){
-        assertEquals(2,calc.SectiOdDo(-2,5));
-    }
-    @Test
-    void OdDoKladneZaporne(){
-        assertEquals(-1,calc.SectiOdDo(2,-5));
-    }
-    @Test
-    void OdDoTisice(){
-        assertEquals(8000,calc.SectiOdDo(1000,9000));
-    }
-    @Test
-    void OdDoNuly(){
-        assertEquals(0,calc.SectiOdDo(0,0));
-    }
-    @Test
-    void OdDoNula(){
-        assertEquals(20,calc.SectiOdDo(0,20));}
-    @Test
-    void OdDoNula2(){
-        assertEquals(-1,calc.SectiOdDo(20,0));
-    }
-    @Test
-    void OdDoDveStejnaCisla(){
-        assertEquals(0,calc.SectiOdDo(40,40));
-    }
-    @Test
-    void OdDoStejneOdsebe(){
-        assertEquals(-1,calc.SectiOdDo(40,-40));
-    }
-    @Test
-    void OdDoStejneOdsebe2(){
-        assertEquals(80,calc.SectiOdDo(-40,40));
-    }
-
-    // testovani pole
-
-    @Test
-    public void testPoleJePrazdne() {
-        int[] prazdnePole = {};
-        assertEquals("Pole je prázdné", calc.Pole(prazdnePole));
+    void sectiDveKladna() {
+        assertEquals(15, calc.Secti(10, 5));
     }
 
     @Test
-    public void testVsechnyPrvkyJsouCelaCisla() {
-        int[] celeCisla = {1, 2, 3, 4, 5};
-        assertEquals("Všechny prvky jsou celá čísla", calc.Pole(celeCisla));
+    void sectiDveZaporna() {
+        int actual = calc.Secti(-2, -5);
+        assertEquals(-7, actual);
     }
 
     @Test
-    public void testNekteryPrvekNeniCeleCislo() {
-        int[] neceleCislo = {1, 2, 3, 4, 5, 2.5}; // 2.5 není celé číslo
-        assertEquals("Některý prvek není celé číslo", calc.Pole(neceleCislo));
+    void sectiPrvniKladne() {
+        assertEquals(10, calc.Secti(15, -5));
     }
+
+    @Test
+    void sectiDruheKladne() {
+        assertEquals(10, calc.Secti(-5, 15));
+    }
+
+    @Test
+    void sectiPrvniNula() {
+        assertEquals(25, calc.Secti(0, 25));
+    }
+
+    @Test
+    void sectiDruhaNula() {
+        assertEquals(20, calc.Secti(20, 0));
+    }
+
+    @Test
+    void sectiDveNuly() {
+        assertEquals(0, calc.Secti(0, 0));
+    }
+
+    @Test
+    void sectiDveStejnaCisla2() {
+        assertEquals(80, calc.Secti(40, 40));
+    }
+    @Test
+    public void subtractZaporne(){
+        double actual = calc.Odecti(-3,-4);
+        assertEquals(1, actual, DELTA);
+    }
+    @Test
+    public void subtractKladne(){
+        double actual = calc.Odecti(3,4);
+        assertEquals(-1, actual, DELTA);
+    }
+    @Test
+    public void subtractDesetinneKladne(){
+        double actual = calc.Odecti(3.5,4.7);
+        assertEquals(-1.2, actual, DELTA);
+    }
+    @Test
+    public void subtractDesetinneZaporne(){
+        double actual = calc.Odecti(-3.5,-4.7);
+        assertEquals(1.2, actual, DELTA);
+    }
+    @Test
+    public void subtractDesetinneJednoZaporne(){
+        double actual = calc.Odecti(-3.5,4.7);
+        assertEquals(-8.2, actual, DELTA);
+    }
+    @Test
+    public void multiplyKladne(){
+        double actual = calc.Nasob(3,4);
+        assertEquals(12, actual, DELTA);
+    }
+    @Test
+    public void multiplyZaporne(){
+        double actual = calc.Nasob(-3,-4);
+        assertEquals(12, actual, DELTA);
+    }
+    @Test
+    public void multiplyJednoZaporne(){
+        double actual = calc.Nasob(3,-4);
+        assertEquals(-12, actual, DELTA);
+    }
+    @Test
+    public void multiplyNulou(){
+        double actual = calc.Nasob(3,0);
+        assertEquals(0, actual, DELTA);
+    }
+    @Test
+    public void delKladne(){
+        double actual = calc.Del(10,5);
+        assertEquals(2, actual, DELTA);
+    }
+    @Test
+    public void divideZaporne(){
+        double actual = calc.Del(-10,-5);
+        assertEquals(2, actual, DELTA);
+    }
+    @Test
+    public void divideJednoZaporne(){
+        double actual = calc.Del(10,-5);
+        assertEquals(-2, actual, DELTA);
+    }
+
+    @Test
+    public void delDoubleNulou(){
+        double actual = calc.Del(3,0);
+        assertEquals(Double.POSITIVE_INFINITY, actual, DELTA);
+    }
+    @Test
+    public void divideNuluDoubleNulou(){
+        double actual = calc.Del(0,0);
+        assertEquals(Double.NaN, actual, DELTA);
+    }
+    @Test
+    public void addFromToPrvniVetsi(){
+        assertThrows(IllegalArgumentException.class,
+                () -> {
+                    double actual = calc.SectiOdDo(3,2);
+                });
+    }
+    @Test
+    public void addFromToPrvniMensi(){
+        double actual = calc.SectiOdDo(2,5);
+        assertEquals(14, actual);
+    }
+    @Test
+    public void addFromToPrvniZaporne(){
+        double actual = calc.SectiOdDo(-2,5);
+        assertEquals(12, actual);
+    }
+    @Test
+    public void addFromToDruheZaporne(){
+        assertThrows(IllegalArgumentException.class, () -> {
+            double actual = calc.SectiOdDo(2,-5);
+        });
+    }
+    @Test
+    public void addFromToObeStejna(){
+        double actual = calc.SectiOdDo(5,5);
+        assertEquals(5, actual, DELTA);
+    }
+
+
+
 
 }

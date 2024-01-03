@@ -7,35 +7,27 @@ public class Calc {
     public int Odecti(int a,int b) {
         return a - b ;
     }
+    public double Odecti(double a,double b) {
+        return a - b ;
+    }
     public double Nasob(double a,double b) {
         return a * b ;
     }
     public double Del(double a,double b) {
         return a / b ;
     }
-    public int SectiOdDo(int a, int b) {
-        int result = a;
-
-        for (int i = a; i <= b; i++) {
-            result += i;
+    public double SectiOdDo(int a, int b) {
+        int soucet;
+        if (a>b) {
+            throw new IllegalArgumentException("Prvni cislo musi byt mensi");
         }
-        return result;
-    }
-    public static String Pole(int[] pole) {
-        // Kontrola, zda je pole prázdné
-        if (pole.length == 0) {
-            return "Pole je prázdné";
-        }
-
-        // Kontrola, zda je každý prvek v poli celé číslo
-        for (int prvek : pole) {
-            if (!(prvek instanceof Integer)) {
-                return "Některý prvek není celé číslo";
-                if(prvek instanceof Integer){}
+        else {
+            soucet = 0;
+            for (int i = a; i <= b; i++) {
+                soucet+=i;
             }
-
         }
-
-        return "Všechny prvky jsou celá čísla";
+        return soucet;
     }
+
 }

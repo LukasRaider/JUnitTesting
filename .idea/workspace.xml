@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="324abf55-c82a-4363-90ee-c213ba2f80de" name="Changes" comment="First Testing">
-      <change afterPath="$PROJECT_DIR$/Test/calculator/SignumTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/calculator/Signum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/calculator/PoleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/calculator/Pole.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/calculator/CalcTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/calculator/CalcTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/calculator/Calc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculator/Calc.java" afterDir="false" />
@@ -19,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -56,8 +56,12 @@
     "JUnit.CalcTest.sectiNuly.executor": "Run",
     "JUnit.CalcTest.sectiStejneOdsebe.executor": "Run",
     "JUnit.CalcTest.sectiZaporneKladne.executor": "Run",
+    "JUnit.CalcTest.subtractDesetinneKladne.executor": "Run",
+    "JUnit.CalcTest.subtractDesetinneZaporne.executor": "Run",
+    "JUnit.CalcTest.testNekteryPrvekNeniCeleCislo.executor": "Run",
     "JUnit.CalcTest.testPoleJePrazdne.executor": "Run",
     "JUnit.CalcTest.testVsechnyPrvkyJsouCelaCisla.executor": "Run",
+    "JUnit.PoleTest.executor": "Run",
     "JUnit.SignumTest.executor": "Run",
     "JUnit.SignumTest.testGetSignumStrPismeno.executor": "Run",
     "Repository.Attach.Annotations": "false",
@@ -98,7 +102,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalcTest.nasobMiliony" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CalcTest.subtractDesetinneKladne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JUnitTesting" />
       <extension name="coverage">
         <pattern>
@@ -108,13 +112,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="calculator" />
       <option name="MAIN_CLASS_NAME" value="calculator.CalcTest" />
-      <option name="METHOD_NAME" value="nasobMiliony" />
+      <option name="METHOD_NAME" value="subtractDesetinneKladne" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalcTest.nasobTisice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CalcTest.subtractDesetinneZaporne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JUnitTesting" />
       <extension name="coverage">
         <pattern>
@@ -124,13 +128,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="calculator" />
       <option name="MAIN_CLASS_NAME" value="calculator.CalcTest" />
-      <option name="METHOD_NAME" value="nasobTisice" />
+      <option name="METHOD_NAME" value="subtractDesetinneZaporne" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalcTest.testPoleJePrazdne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CalcTest.testNekteryPrvekNeniCeleCislo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JUnitTesting" />
       <extension name="coverage">
         <pattern>
@@ -140,13 +144,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="calculator" />
       <option name="MAIN_CLASS_NAME" value="calculator.CalcTest" />
-      <option name="METHOD_NAME" value="testPoleJePrazdne" />
+      <option name="METHOD_NAME" value="testNekteryPrvekNeniCeleCislo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalcTest.testVsechnyPrvkyJsouCelaCisla" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PoleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JUnitTesting" />
       <extension name="coverage">
         <pattern>
@@ -155,9 +159,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="calculator" />
-      <option name="MAIN_CLASS_NAME" value="calculator.CalcTest" />
-      <option name="METHOD_NAME" value="testVsechnyPrvkyJsouCelaCisla" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="calculator.PoleTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -165,10 +168,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CalcTest" />
-        <item itemvalue="JUnit.CalcTest.testPoleJePrazdne" />
-        <item itemvalue="JUnit.CalcTest.testVsechnyPrvkyJsouCelaCisla" />
-        <item itemvalue="JUnit.CalcTest.nasobTisice" />
-        <item itemvalue="JUnit.CalcTest.nasobMiliony" />
+        <item itemvalue="JUnit.CalcTest.subtractDesetinneZaporne" />
+        <item itemvalue="JUnit.CalcTest.subtractDesetinneKladne" />
+        <item itemvalue="JUnit.PoleTest" />
+        <item itemvalue="JUnit.CalcTest.testNekteryPrvekNeniCeleCislo" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +200,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704269838567</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="First Testing">
+      <option name="closed" value="true" />
+      <created>1704282422908</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1704282422909</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

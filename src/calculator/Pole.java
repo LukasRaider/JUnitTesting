@@ -19,9 +19,9 @@ public class Pole {
     }
     public double getSame(double[] input){
         double result = input[0];
-        int convert;
+        double convert = 1.1;
         for(int i = 0;i<input.length;i++) {
-            if(input[i]==result){ convert = 0;}
+            if(input[i]==result){ convert = 0.0;}else convert = 1.1;
         }
         return convert;
     }

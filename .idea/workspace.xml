@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="324abf55-c82a-4363-90ee-c213ba2f80de" name="Changes" comment="First Testing">
-      <change afterPath="$PROJECT_DIR$/Test/calculator/PoleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/calculator/Pole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/calculator/PoleDovnitrPoleVenTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/calculator/PoleDovnitrPoleVen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/calculator/CalcTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/calculator/CalcTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/calculator/Calc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculator/Calc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/calculator/Pole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculator/Pole.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +86,7 @@
       <recent name="calculator" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CalcTest">
+  <component name="RunManager" selected="JUnit.PoleDovnitrPoleVenTest">
     <configuration name="CalcTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JUnitTesting" />
       <extension name="coverage">
@@ -134,7 +134,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalcTest.testNekteryPrvekNeniCeleCislo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PoleDovnitrPoleVenTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JUnitTesting" />
       <extension name="coverage">
         <pattern>
@@ -143,9 +143,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="calculator" />
-      <option name="MAIN_CLASS_NAME" value="calculator.CalcTest" />
-      <option name="METHOD_NAME" value="testNekteryPrvekNeniCeleCislo" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="calculator.PoleDovnitrPoleVenTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -167,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PoleDovnitrPoleVenTest" />
         <item itemvalue="JUnit.CalcTest" />
         <item itemvalue="JUnit.CalcTest.subtractDesetinneZaporne" />
         <item itemvalue="JUnit.CalcTest.subtractDesetinneKladne" />
         <item itemvalue="JUnit.PoleTest" />
-        <item itemvalue="JUnit.CalcTest.testNekteryPrvekNeniCeleCislo" />
       </list>
     </recent_temporary>
   </component>
@@ -208,7 +207,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704282422909</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="First Testing">
+      <option name="closed" value="true" />
+      <created>1704287085442</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1704287085442</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
